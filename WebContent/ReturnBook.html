@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Return book Form</title>
+  <style>
+    /* Internal CSS */
+    
+    .container {
+        width: 300px;
+        height: 300px; /* specify a height for the container */
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background-color:hotpink;
+        border-radius: 5px;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label, input {
+      margin-bottom: 10px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"] {
+      padding: 8px;
+      border: none;
+      border-radius: 3px;
+      background-color: -webkit-linear-gradient(left, #a445b2, #fa4299);
+    }
+    input[type="submit"] {
+      background-color: #fff;
+      color: black;
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    input[type="submit"]:hover {
+      background-color: #07760f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Return book</h1>
+    <form action="/BookManagementSystem/library/sucessreturn">
+      <label for="studentId">Student ID:</label>
+      <input type="text" id="studentId" name="id">
+      <label for="bookId">ISBN NO:</label>
+      <input type="text" id="ISBN" name="isbn">
+      <input type="submit" value="Issue book">
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Book Form</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+        *{
+            
+            font-family: 'Poppins', sans-serif;
+        }
+    /* Internal CSS for styling */
+    body {
+      background-color:#fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      width: 30%;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    label, input {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+            padding: 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto;
+    }
+    h1 {
+      color: #007bff;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    label {
+      color: #495057;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ced4da;
+    }
+    input[type="submit"]:hover {
+      background-color: #07760f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Add Book</h1>
+    <form action="/BookManagementSystem/library/addbook">
+   	<label for="bookName">ISBN</label>
+      <input type="text" id="bookName" name="isbn" required>
+      <label for="bookName">Book Name</label>
+      <input type="text" id="bookName" name="name" required>
+      <label for="authorName">Author Name</label>
+      <input type="text" id="authorName" name="authorname" required>
+       <input type="submit" value="Issue book">
+    </form>
+  </div>
+</body>
+</html>
